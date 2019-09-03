@@ -1,7 +1,7 @@
-package top.ok.fine.pomegranate.repository;
+package top.ok.fine.pomegranate.system.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import top.ok.fine.pomegranate.domain.User;
+import top.ok.fine.pomegranate.system.domain.User;
 
 /**
  * @program

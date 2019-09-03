@@ -1,13 +1,12 @@
-package top.ok.fine.pomegranate.domain;
+package top.ok.fine.pomegranate.system.domain;
 
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 /**
  * @program
@@ -31,5 +30,7 @@ public class User {
     @Column
     private String password;
 
+    @ManyToMany(fetch = FetchType.EAGER)
+    private List<Role> roles;
 
 }
